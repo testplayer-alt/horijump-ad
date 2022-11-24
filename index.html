@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>掘がじゃんぷするだけ。</title>
+	<style type="text/css">
+		#gamecanvas {
+			position: absolute;
+			top: 100px;
+			left: 20px;
+			z-index: 1;
+		}
+		.info {
+			position: relative;
+		}
+		.info-continer {
+			width: 50%;
+			height: 300px;
+			background-color: rgba(255, 114, 201, 0.36);
+			position: absolute;
+			top: 500px;
+			padding: 0 20px;
+		}
+		.title {
+			width: 40%;
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript" src="index.js"></script>	
+	<link rel="shortcut icon" href="#">
+</head>
+<body>
+	<div class="title">
+		<h1>堀がじゃんぷするだけ。</h1>
+	</div>
+	<canvas id="gamecanvas" width="480" height="480"></canvas>
+ 
+    <audio id="btn_audio">
+        <source src="./bane.mp3" type="audio/mp3">
+    </audio>
+
+	<div class="info">
+		<div class="info-continer">
+			<h1>遊び方</h1>
+			<p>AキーとDキーで左右に動きます<br>
+				Sキーを押すことで堀がジャンプします ※連続ジャンプも可能<br>
+				ジャンプ中に横に動く事で、落下速度がゆっくりになります<br>
+		        JavaScriptの使用上、キーの同時押しは反応しません</p>
+		</div>
+	</div>
+</body>
+</html>
